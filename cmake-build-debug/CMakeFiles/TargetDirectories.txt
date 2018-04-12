@@ -1,0 +1,3 @@
+C:/Users/Grzegorz/Desktop/szachownica_polibiusza/cmake-build-debug/CMakeFiles/szachownica_polibiusza.dir
+C:/Users/Grzegorz/Desktop/szachownica_polibiusza/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Grzegorz/Desktop/szachownica_polibiusza/cmake-build-debug/CMakeFiles/rebuild_cache.dir

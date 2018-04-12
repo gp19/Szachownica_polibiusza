@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Grzegorz/Desktop/szachownica_polibiusza/encryptor.c
+
+C:/Users/Grzegorz/Desktop/szachownica_polibiusza/main.c
+stdio.h
+-
+conio.h
+-
+encryptor.c
+C:/Users/Grzegorz/Desktop/szachownica_polibiusza/encryptor.c
+
