@@ -28,8 +28,7 @@
 #define X   88
 #define Y   89
 #define Z   90
-#define SPACE 32
-#define ENTER 13
+//#define SPACE 32
 
 
 static int encrypt_char(char ch){

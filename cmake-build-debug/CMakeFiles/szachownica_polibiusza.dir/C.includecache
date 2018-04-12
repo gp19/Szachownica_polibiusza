@@ -13,6 +13,8 @@ stdio.h
 -
 conio.h
 -
+stdbool.h
+-
 encryptor.c
 C:/Users/Grzegorz/Desktop/szachownica_polibiusza/encryptor.c
 
