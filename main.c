@@ -3,12 +3,11 @@
 #include <stdbool.h>
 #include "encryptor.c"
 
-int encrypted_message[];
 char message[] = {};
 
 /*Funkca przyjmujaca niezakodowana wiadomosc oraz ilosc znakow
  * w tej wiadomosci i dajaca na wyjsciu zakodowana wiadomosc */
-void encrypt_message(char message[], int length) {
+void encrypt_message(int length, int encrypted_message[]) {
 
     for (int i = 0; i < length; i++) {
         encrypted_message[i] = encrypt_char(message[i]);
@@ -21,7 +20,7 @@ void encrypt_message(char message[], int length) {
 int main() {
 
     int i = 0;
-    int cond;
+    int cond; //zmienna warunkowa przerywajaca wczytywanie znakow do rozszyfrowania
     do {
         message[i] = getch();
         cond = message[i];
@@ -30,7 +29,8 @@ int main() {
         i++;
     } while (true);
 
-    encrypt_message(message, i);
+    int encrypted_message[i];
+    encrypt_message(i, encrypted_message);
 
     for (int j = 0; j < i; j++) {
         printf("%d", encrypted_message[j]);
