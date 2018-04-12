@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <conio.h>
 #include <stdbool.h>
+#include <ctype.h>
 #include "encryptor.c"
 
 char message[] = {};
@@ -22,7 +23,7 @@ int main() {
     int i = 0;
     int cond; //zmienna warunkowa przerywajaca wczytywanie znakow do rozszyfrowania
     do {
-        message[i] = getch();
+        message[i] = toupper(getch());
         cond = message[i];
         if (cond == 13)
             break;
