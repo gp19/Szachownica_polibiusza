@@ -33,7 +33,10 @@ int main() {
     encrypt_message(i, encrypted_message);
 
     for (int j = 0; j < i; j++) {
-        printf("%d", encrypted_message[j]);
+        if(encrypted_message[j]!=0)  //Zero w tablicy zakodowanej oznacza spacje
+            printf("%d", encrypted_message[j]);
+        else
+            printf(" ");
     }
 
 }

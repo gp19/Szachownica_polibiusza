@@ -28,11 +28,13 @@
 #define X   88
 #define Y   89
 #define Z   90
-//#define SPACE 32
+#define SPACE 32
 
 
 static int encrypt_char(char ch){
     switch(ch){
+        case SPACE:
+            return 0;
         case  A:
             return 11;
         case  B:
